@@ -19,10 +19,10 @@ A directory will then be created, containing the text files. Each text file is o
 
 First task is to format the training data. Classifier must accept training data in exactly one file in the following format:
 
-  LABEL_1 FEATURE_11 FEATURE_12 ... FEATURE_1N 
-  LABEL_2 FEATURE_21 FEATURE_22 ... FEATURE_2N 
-  ... 
-  LABEL_M FEATURE_M1 FEATURE_M2 ... FEATURE_MN 
+    LABEL_1 FEATURE_11 FEATURE_12 ... FEATURE_1N 
+    LABEL_2 FEATURE_21 FEATURE_22 ... FEATURE_2N 
+    ... 
+    LABEL_M FEATURE_M1 FEATURE_M2 ... FEATURE_MN 
   
 Each line in the training data file corresponds to one document. Each line starts with the class label for the document, and continues with the feature vector that represents the document. For both tasks in this assignment, we will use (at least) bag-of-words features.
 
