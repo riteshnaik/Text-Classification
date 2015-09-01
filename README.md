@@ -83,6 +83,10 @@ Final testing will be done using a test set. It should take only a few minutes t
 
 The test set will have the same format as the training set, that is, a directory containing text files, except that the file names of the test data will not reveal the correct label. The files are named TEST.00001.txt, TEST.00002.txt, etc. Output files should have one label per line, corresponding to each file in numerical order. In other words, the first line should be the label for TEST.00001.txt, the second line should be the label for TEST.00002.txt, and so on.
 
+####Part 1 Files
+* Model files: spam.nb and sentiment.nb
+* Files containing the STDOUT output of the classification program on the test set: spam.out and sentiment.out.
+
 ###Part II
 
 In the second part build classifiers using the same datasets as in part I, but using an off-the-shelf implementations of Maximum Entropy classification and Support Vector Machines.
