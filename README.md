@@ -91,3 +91,7 @@ For Support Vector Machines, use SVMlight . Read the documentation provided and 
 
 For Maximum Entropy, use MegaM. Read the documentation provided. Use -nc for named classes, and the multiclass setting. Postprocess the output to be in the same format as the output of nbclassify. You may need to install ocaml to compile, and you may need to change the MegaM Makefile to have the right path on the line that starts with WITHCLIBS (WITHCLIBS =-I /opt/local/lib/ocaml/caml), and replace -lstr with -lcamlstr in the line that starts with WITHSTR).
 
+####Part 2 Files
+* Model files: spam.svm.model, sentiment.svm.model, spam.megam.model and sentiment.megam.model.
+* Classification output files (postprocessed to have the same format as the output of nbclassify): pam.svm.out, sentiment.svm.out, spam.megam.out and sentiment.megam.out.
+
