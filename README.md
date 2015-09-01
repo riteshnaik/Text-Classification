@@ -83,4 +83,11 @@ Final testing will be done using a test set. It should take only a few minutes t
 
 The test set will have the same format as the training set, that is, a directory containing text files, except that the file names of the test data will not reveal the correct label. The files are named TEST.00001.txt, TEST.00002.txt, etc. Output files should have one label per line, corresponding to each file in numerical order. In other words, the first line should be the label for TEST.00001.txt, the second line should be the label for TEST.00002.txt, and so on.
 
+###Part II
+
+In the second part build classifiers using the same datasets as in part I, but using an off-the-shelf implementations of Maximum Entropy classification and Support Vector Machines.
+
+For Support Vector Machines, use SVMlight . Read the documentation provided and format the training data according to the specifications. Use the default parameters (or tune them as you like). The software is setup for binary classification, where the labels are -1 and +1. This works just fine for our two tasks, but you will need to postprocess the output to be in the same format as the output of nbclassify.
+
+For Maximum Entropy, use MegaM. Read the documentation provided. Use -nc for named classes, and the multiclass setting. Postprocess the output to be in the same format as the output of nbclassify. You may need to install ocaml to compile, and you may need to change the MegaM Makefile to have the right path on the line that starts with WITHCLIBS (WITHCLIBS =-I /opt/local/lib/ocaml/caml), and replace -lstr with -lcamlstr in the line that starts with WITHSTR).
 
